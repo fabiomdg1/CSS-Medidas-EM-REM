@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel - EM - REM</title> 
+    <style>
+        html{
+            /*Definido a fonte padrão/root com 16px*/
+            font-size: 16px;
+        }
+        span{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!--Texto com tamanho de fonte padrão de 16pixels-->
+    <!--Usado para efeito de comparação-->
+    <p>Texto fora do span com 16px</p>
+    <span>
+        <!--Texto com 2em do tamanho padrão de 16pixels-->
+        <!--Neste caso 2em = 32px-->
+        <!--Logo, 2em = (2 x 16) = 32px -->
+        Primeiro span - texto dentro do PRIMEIRO span com 1rem<br />
+        <span>
+            <!--Texto com 2em do elemento pai-->
+            <!--Neste caso o elemento pai tem 32px-->
+            <!--Logo 2em = (2 X 32) = 64px -->
+            Segundo Span - Aninhado dentro do PRIMEIRO span e texto com 1rem<br />
+            <span>
+                <!--Texto com 2em do elemento pai-->
+                <!--Neste caso o elemento pai tem 64px-->
+                <!--Logo, 2em = (64 x 2) = 128px-->
+                Terceiro Span - Aninhado dentro do SEGUNDO span e texto com 1rem
+            </span>
+        </span>
+    </span>
+</body>
+    
+</body>
+</html>
